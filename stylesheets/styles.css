@@ -88,12 +88,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#393939;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#727272;
 }
 
 a small {
@@ -322,3 +322,11 @@ footer {
     color:#444;
   }
 }
+
+.img-circle {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    border-radius:100%;
+    max-width:75%;
+}
+
