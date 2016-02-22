@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>startup pitch generator</title>
+
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <meta name="viewport" content="width=device-width">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <p id="pitch">the something of something</p>
+        <script src="javascripts/scale.fix.js"></script>
+        <a href="#" onclick="myFunction()" title="new pitch">new pitch</a>
+
+        <script>
+        var tech = ["google", "microsoft", "apple", "netflix", "spotify", "youtube", "iphone", "facebook", "google maps", "google chrome", "google images", "twitter", "groupon", "ebay", "amazon", "aws", "android", "ios", "mongodb", "mysql", "postgresql", "microsoft word", "microsoft excel", "turbo tax", "google docs", "dropbox", "wikipedia", "uber", "alibaba", "angularjs", "nodejs", "sublime text", "ipad", "hadoop", "cassandra", "maven", "gradle", "jquery", "redis", "tex", "wifi", "bluetooth", "rfid", "nfc", "git", "github", "pandora", "pinterest", "reddit", "gmail", "microsoft outlook", "yik yak", "blizzard", "valve", "tinder", "shazam"]
+        var stuff = ["garbage", "taxidermy", "horse grooming", "lawmaking", "fishing", "frozen food aisles", "zoology", "anesthesiology", "archeology", "religon", "song writing", "pharmacology", "accounting", "paleontology", "plastic surgery", "pencil sharpeners", "paper cuts", "deep sea diving", "nut cracking", "catan", "bowling", "zippers", "wool", "carrots", "ankles", "martial arts", "door stops", "spider traps", "rodents", "tugboats", "love", "dads", "granola", "gondolas", "yurts", "gazebos", "vaping", "weed", "jorts", "assault rigles", "smells", "east asian literature", "russian folk songs", "siberia", "small pox", "pajamas", "clergymen", "mexican food", "poultry", "tuesdays", "stamps", "beer league softball"]
+        function myFunction() {
+            document.getElementById("pitch").innerHTML = "the " + tech[Math.floor(Math.random()*tech.length)] + " of " + stuff[Math.floor(Math.random()*stuff.length)];
+        }
+        </script>
+
+    </body>
+</html>
+

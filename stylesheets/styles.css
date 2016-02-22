@@ -326,3 +326,8 @@ footer {
     max-width:75%;
 }
 
+#pitch {
+    font-size:48pt;
+    text-align:center;
+    vertical-align:center;
+}
